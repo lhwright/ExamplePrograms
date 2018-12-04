@@ -14,9 +14,9 @@ int main() {
     heap my_heap(starting_heap);
 
     // prints out 1 1 3 4 5 9
-    while (my_heap.size() != 0) {
-        cout << my_heap.remove() << " ";
-    }
-    cout << endl;
+    //while (my_heap.size() != 0) {
+    //    cout << my_heap.remove() << " ";
+    //}
+    //cout << endl;
     return 0;
 }

@@ -4,15 +4,18 @@
 
     @author <your name goes here>
 */
+#include <iostream>
 #include "heap.h"
 
 using namespace std;
 
 heap::heap() {
+    heap_array.push_back(INT_MAX);
 }
 
 heap::heap(vector<int> const &array) {
-    heap_array = array;
+    heap_array.push_back(INT_MAX);
+    heap_array.insert(heap_array.end(), array.begin(), array.end());
     build();
 }
 
@@ -20,7 +23,7 @@ heap::~heap() {
 }
 
 size_t heap::size() const {
-    return heap_array.size();
+    return heap_array.size() - 1;
 }
 
 int heap::remove() {
