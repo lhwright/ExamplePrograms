@@ -4,7 +4,7 @@
 
     @author <your name goes here>
 */
-#include <iostream>
+#include <climits>
 #include "heap.h"
 
 using namespace std;
