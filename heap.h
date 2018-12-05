@@ -17,7 +17,9 @@ class heap {
         size_t size() const;
         int remove();
         void insert(int const value);
-
+        size_t left(size_t index);
+        size_t right(size_t index);
+        void print();
     private:
         void build();
         void trickle_down(size_t const index);
